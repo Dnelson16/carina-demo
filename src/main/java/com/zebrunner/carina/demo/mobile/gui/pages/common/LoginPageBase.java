@@ -24,4 +24,11 @@ public abstract class LoginPageBase extends AbstractPage {
 
 	public abstract CarinaDescriptionPageBase login();
 
+    public abstract boolean isLoginButtonDisplayed();
+
+	public abstract boolean isUsernameFieldDisplayed();
+
+	public abstract boolean isPasswordFieldDisplayed();
+
+	public abstract void login(String username, String password);
 }

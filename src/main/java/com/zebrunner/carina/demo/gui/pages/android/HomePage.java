@@ -88,4 +88,10 @@ public class HomePage extends HomePageBase {
         return initPage(driver, AllBrandsPageBase.class);
     }
 
+    public void logout() {
+    }
+
+    public boolean isHomePageDisplayed() {
+        return false;
+    }
 }

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Web Test Suite" verbose="1">
+    <test name="Login and Logout Test">
+        <classes>
+            <class name="com.zebrunner.carina.demo.HomeworkTestCases.TestLoginAndLogout"/>
+        </classes>
+    </test>
+    <test name="Cart Validation Test">
+        <classes>
+            <class name="com.zebrunner.carina.demo.HomeworkTestCases.TestCartValidation"/>
+        </classes>
+    </test>
+    <test name="Product Card Test">
+        <classes>
+            <class name="com.zebrunner.carina.demo.HomeworkTestCases.TestProductCard"/>
+        </classes>
+    </test>
+    <test name="Sorting Test">
+        <classes>
+            <class name="com.zebrunner.carina.demo.HomeworkTestCases.TestSorting"/>
+        </classes>
+    </test>
+    <test name="Page Navigation Test">
+        <classes>
+            <class name="com.zebrunner.carina.demo.HomeworkTestCases.TestPageNavigation"/>
+        </classes>
+    </test>
+    <test name="Test login and logout">
+        <classes>
+            <class name="com.zebrunner.carina.demo.HomeworkTestCases.TestLoginAndLogout"/>
+        </classes>
+    </test>
+    <test name="User Registration Test">
+        <classes>
+            <class name="com.zebrunner.carina.demo.HomeworkTestCases.UserRegistrationTest"/>
+        </classes>
+    </test>
+    <test name="Product details test">
+        <classes>
+            <class name="com.zebrunner.carina.demo.HomeworkTestCases.ProductDetailsAndPriceCheckTest"/>
+        </classes>
+    </test>
+</suite>

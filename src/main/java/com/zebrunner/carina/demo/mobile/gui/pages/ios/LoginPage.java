@@ -85,4 +85,24 @@ public class LoginPage extends LoginPageBase {
 		return clickLoginBtn();
 	}
 
+	@Override
+	public boolean isLoginButtonDisplayed() {
+		return false;
+	}
+
+	@Override
+	public boolean isUsernameFieldDisplayed() {
+		return false;
+	}
+
+	@Override
+	public boolean isPasswordFieldDisplayed() {
+		return false;
+	}
+
+	@Override
+	public void login(String username, String password) {
+
+	}
+
 }
