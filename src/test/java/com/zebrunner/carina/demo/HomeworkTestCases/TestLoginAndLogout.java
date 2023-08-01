@@ -1,5 +1,7 @@
 package com.zebrunner.carina.demo.HomeworkTestCases;
 
+import com.zebrunner.carina.core.IAbstractTest;
+import com.zebrunner.carina.core.registrar.ownership.MethodOwner;
 import com.zebrunner.carina.demo.gui.pages.android.ProductPage;
 import com.zebrunner.carina.demo.mobile.gui.pages.android.LoginPage;
 import org.openqa.selenium.WebDriver;
@@ -8,9 +10,10 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-public class TestLoginAndLogout {
+public class TestLoginAndLogout implements IAbstractTest {
 
     @Test
+    @MethodOwner(owner = "Dnelson")
     public void testLoginAndLogout() {
 
         String username = "standard_user";

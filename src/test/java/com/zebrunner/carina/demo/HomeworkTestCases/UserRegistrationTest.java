@@ -1,5 +1,6 @@
 package com.zebrunner.carina.demo.HomeworkTestCases;
 
+import com.zebrunner.carina.core.registrar.ownership.MethodOwner;
 import com.zebrunner.carina.demo.gui.pages.SauceDemo.HomePages;
 import com.zebrunner.carina.demo.gui.pages.SauceDemo.SignUpPage;
 import org.openqa.selenium.WebDriver;
@@ -22,6 +23,7 @@ public class UserRegistrationTest {
     }
 
     @Test
+    @MethodOwner(owner = "Dnelson")
     public void testUserRegistration() {
 
         homePages.open();

@@ -1,5 +1,6 @@
 package com.zebrunner.carina.demo.HomeworkTestCases;
 
+import com.zebrunner.carina.core.registrar.ownership.MethodOwner;
 import com.zebrunner.carina.demo.gui.pages.android.ProductPage;
 import com.zebrunner.carina.demo.mobile.gui.pages.android.LoginPage;
 import org.openqa.selenium.WebDriver;
@@ -10,6 +11,7 @@ import java.util.List;
 public class TestSorting {
 
     @Test
+    @MethodOwner(owner = "Dnelson")
     public void testSorting() {
 
         String username = "standard_user";

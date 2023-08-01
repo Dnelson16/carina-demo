@@ -1,5 +1,7 @@
 package com.zebrunner.carina.demo.HomeworkTestCases;
 
+import com.zebrunner.carina.core.IAbstractTest;
+import com.zebrunner.carina.core.registrar.ownership.MethodOwner;
 import com.zebrunner.carina.demo.gui.pages.SauceDemo.HomePages;
 import com.zebrunner.carina.demo.gui.pages.SauceDemo.ProductPages;
 import org.openqa.selenium.WebDriver;
@@ -9,7 +11,7 @@ import org.testng.annotations.*;
 
 //https://www.demoblaze.com/
 
-public class ProductCartCheckTest {
+public class ProductCartCheckTest implements IAbstractTest {
 
     private WebDriver driver;
     private HomePages homePages;
@@ -22,6 +24,7 @@ public class ProductCartCheckTest {
     }
 
     @Test
+    @MethodOwner(owner = "Dnelson")
     public void testProductCartCheck() {
 
         homePages.open();

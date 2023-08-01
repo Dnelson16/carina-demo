@@ -1,16 +1,16 @@
 package com.zebrunner.carina.demo.HomeworkTestCases;
 
+import com.zebrunner.carina.core.registrar.ownership.MethodOwner;
 import com.zebrunner.carina.demo.gui.pages.android.ProductPage;
 import com.zebrunner.carina.demo.mobile.gui.pages.android.LoginPage;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-// https://www.demoblaze.com/
-
 public class TestPageNavigation {
 
     @Test
+    @MethodOwner(owner = "Dnelson")
     public void testPageNavigation() {
 
         String username = "standard_user";
