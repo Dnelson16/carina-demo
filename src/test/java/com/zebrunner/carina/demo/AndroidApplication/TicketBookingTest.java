@@ -26,7 +26,7 @@ public class TicketBookingTest {
 
     @Test
     public void testTicketBookingAndCheckout() {
-        // Search for a specific movie or select a movie from the home screen
+
         String movieToBook = "Avengers: Endgame";
         driver.findElement(By.id("movieCardId")).click();
 
@@ -42,10 +42,8 @@ public class TicketBookingTest {
         Assert.assertEquals(actualShowtime, expectedShowtime);
         Assert.assertEquals(actualTicketQuantity, expectedTicketQuantity);
 
-        // Proceed with the checkout process
         driver.findElement(By.id("proceedToCheckoutButtonId")).click();
 
-        // Verify that the confirmation page is displayed after the checkout
         Assert.assertTrue(driver.findElement(By.id("confirmationPageId")).isDisplayed());
     }
 

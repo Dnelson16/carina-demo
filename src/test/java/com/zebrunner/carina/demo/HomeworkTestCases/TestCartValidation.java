@@ -23,12 +23,6 @@ public class TestCartValidation implements IAbstractTest {
         driver = new ChromeDriver();
     }
 
-    @AfterTest
-    public void tearDown() {
-        if (driver != null) {
-            driver.quit();
-        }
-    }
 
     @Test
     @MethodOwner(owner = "Dnelson")
@@ -65,5 +59,12 @@ public class TestCartValidation implements IAbstractTest {
         checkoutPage.finishCheckout();
 
         Assert.assertTrue(checkoutPage.isOrderCompleted(), "Order completion message is not displayed.");
+    }
+
+    @AfterTest
+    public void tearDown() {
+        if (driver != null) {
+            driver.quit();
+        }
     }
 }

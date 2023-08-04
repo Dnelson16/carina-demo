@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class UserLoginTest {
+public class UserLoginRewardsTest {
     private AndroidDriver driver;
 
     @BeforeClass
