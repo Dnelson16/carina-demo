@@ -1,5 +1,6 @@
 package com.zebrunner.carina.demo.AndroidApplication;
 
+import com.zebrunner.carina.core.registrar.ownership.MethodOwner;
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -25,6 +26,7 @@ public class TicketBookingTest {
     }
 
     @Test
+    @MethodOwner(owner = "Dnelson")
     public void testTicketBookingAndCheckout() {
 
         String movieToBook = "Avengers: Endgame";
@@ -38,6 +40,7 @@ public class TicketBookingTest {
         String actualMovieTitle = driver.findElement(By.id("checkoutMovieTitleId")).getText();
         String actualShowtime = driver.findElement(By.id("checkoutShowtimeLabelId")).getText();
         int actualTicketQuantity = Integer.parseInt(driver.findElement(By.id("checkoutTicketQuantityId")).getText());
+
         Assert.assertEquals(actualMovieTitle, expectedMovieTitle);
         Assert.assertEquals(actualShowtime, expectedShowtime);
         Assert.assertEquals(actualTicketQuantity, expectedTicketQuantity);

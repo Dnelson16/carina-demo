@@ -1,5 +1,6 @@
 package com.zebrunner.carina.demo.AndroidApplication;
 
+import com.zebrunner.carina.core.registrar.ownership.MethodOwner;
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -25,6 +26,7 @@ public class UserLoginRewardsTest {
     }
 
     @Test
+    @MethodOwner(owner = "Dnelson")
     public void testUserLoginAndRewardsPoints() {
         Assert.assertTrue(driver.findElement(By.id("loginScreenId")).isDisplayed());
 
@@ -38,6 +40,7 @@ public class UserLoginRewardsTest {
         String expectedEmail = "your.email@example.com";
         String actualName = driver.findElement(By.id("userNameLabelId")).getText();
         String actualEmail = driver.findElement(By.id("userEmailLabelId")).getText();
+
         Assert.assertEquals(actualName, expectedName);
         Assert.assertEquals(actualEmail, expectedEmail);
 
